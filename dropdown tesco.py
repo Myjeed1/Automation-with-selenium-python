@@ -29,8 +29,9 @@ def dropdown_tesco():
     time.sleep(3)
     phone = driver.find_element(By.XPATH, "//span[contains(text(),'Create account')]")
     ActionChains(driver).scroll_to_element(phone).perform()
-    time.sleep(30)
+    time.sleep(20)
 
 
 dropdown_tesco()
+
 
