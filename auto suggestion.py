@@ -1,6 +1,7 @@
 import time
 
 from selenium import webdriver
+from selenium.common import NoSuchElementException
 from selenium.webdriver.common.by import By
 
 
@@ -20,13 +21,14 @@ def tesco_auto_sug():
     h.click()
     time.sleep(3)
 
-    search1 = driver.find_element(By.XPATH, '//*[@id="header"]/header/div/div[2]/div/div/div['
-                                            '1]/div/div/div/div/div/div/div/div[2]/div[2]/button')
-    search1.click()
+    try:
+        search1 = driver.find_element(By.XPATH, '//*[@id="header"]/header/div/div[2]/div/div/div['
+                                                '1]/div/div/div/div/div/div/div/div[2]/div[2]/button')
+        search1.click()
+    except NoSuchElementException:
+        print("error has been handled")
+
     time.sleep(20)
 
 
 tesco_auto_sug()
-
-
-
