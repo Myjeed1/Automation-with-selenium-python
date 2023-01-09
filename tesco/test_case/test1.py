@@ -2,6 +2,7 @@ import unittest
 from selenium import webdriver
 
 from tesco.page.appl import Register
+import HtmlTestRunner
 
 
 class TescoRegistration(unittest.TestCase):
@@ -15,12 +16,12 @@ class TescoRegistration(unittest.TestCase):
         self.tesco_register.cookie_tes()
         self.tesco_register.signin_tes()
         self.tesco_register.reg_acct_tes()
-        self.tesco_register.ent_email("email")
-        self.tesco_register.ent_password("password")
+        self.tesco_register.ent_email("myjeed@gmail.com")
+        self.tesco_register.ent_password("1234567890")
 
     def tearDown(self):
         self.driver.quit()
 
 
 if __name__ == "__main__":
-    unittest.main
+    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='tesco/reports'))

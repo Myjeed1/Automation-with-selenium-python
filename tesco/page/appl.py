@@ -22,10 +22,10 @@ class Register:
         time.sleep(5)
 
     def ent_email(self, email):
-        self.driver.find_element(By.XPATH, AllLocator.enter_email).send_keys("myjeed1@gmail.com")
+        self.driver.find_element(By.XPATH, AllLocator.enter_email).send_keys(email)
         time.sleep(5)
 
     def ent_password(self, password):
-        self.driver.find_element(By.XPATH, AllLocator.enter_password).send_keys("123567890")
+        self.driver.find_element(By.XPATH, AllLocator.enter_password).send_keys(password)
         time.sleep(5)
 

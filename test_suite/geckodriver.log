@@ -1,0 +1,14 @@
+1673267877926	geckodriver	INFO	Listening on 127.0.0.1:51728
+1673267881058	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51729" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Majeed\\AppData\\Local\\Temp\\rust_mozprofileaBoOJe"
+1673267886475	Marionette	INFO	Marionette enabled
+1673267886515	Marionette	INFO	Listening on port 51792
+Read port: 51792
+WebDriver BiDi listening on ws://127.0.0.1:51729
+1673267887371	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Majeed\\AppData\\Local\\Temp\\rust_mozprofileaBoOJe\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51729/devtools/browser/14452259-e97e-4b53-b58d-3803f72c0dc2
+JavaScript warning: https://assets.adobedtm.com/c3a3920a84ef/2104df5e2099/launch-a40370bb1e84.min.js, line 3: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.moneyhelper.org.uk."
+1673267948034	Marionette	INFO	Stopped listening on port 51792
+!!! error running onStopped callback: TypeError: callback is not a function
+[Parent 24932, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:746
