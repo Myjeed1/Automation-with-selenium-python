@@ -62,7 +62,7 @@ def test_later_life(setup):
     driver.back()
 
 
-def ben_work1():
+def test_ben_work1(setup):
     driver.find_element(By.XPATH, LocatorBenefit.ben_work).click()
     time.sleep(3)
     action = ActionChains(driver)
@@ -71,7 +71,7 @@ def ben_work1():
     driver.back()
 
 
-def ben_house():
+def test_ben_house(setup):
     driver.find_element(By.XPATH, LocatorBenefit.ben_house).click()
     time.sleep(3)
     action = ActionChains(driver)
@@ -89,7 +89,7 @@ def test_prob_ben(setup):
     driver.back()
 
 
-def ben_ben():
+def test_ben_ben(setup):
     driver.find_element(By.XPATH, LocatorBenefit.benefit_ben).click()
     time.sleep(3)
     action = ActionChains(driver)
