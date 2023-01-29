@@ -9,13 +9,16 @@ from selenium.webdriver.firefox.service import Service as FirefoxService
 from webdriver_manager.firefox import GeckoDriverManager
 
 
-class CookieTest(unittest.TestCase):
+class TestCookieTest:
 
     def setUp(self):
         service = FirefoxService(executable_path=GeckoDriverManager().install())
         self.driver = webdriver.Firefox(service=service)
         self.driver.get('https://www.moneyhelper.org.uk/en')
         self.driver.maximize_window()
+
+        yield
+        self.driver.quit()
 
     def test_cookie(self):
         self.click_cookie = MapsTest(self.driver)
@@ -24,9 +27,9 @@ class CookieTest(unittest.TestCase):
         self.click_cookie.click_benefit()
         time.sleep(10)
 
-    def tearDown(self):
+    """def tearDown(self):
         self.driver.quit()
 
 
 if __name__ == "__main__":
-    unittest.main()
+    unittest.main()"""
